@@ -21,7 +21,7 @@ func (g *BaseGear) Ratio() float64 {
 }
 
 func (g *BaseGear) GearInches(diameter int) float64 {
-	return g.Ratio() * float64(diameter)
+	return g.Ratio() + float64(diameter)
 }
 
 func (w *Wheel) Diameter() float64 {
